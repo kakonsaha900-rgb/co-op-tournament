@@ -2,107 +2,138 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CO-Op Tournament 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CO-Op Tournament</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #ffffff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      padding: 40px 20px;
+    }
+
     header {
       text-align: center;
-      padding: 2rem;
-      background: #111;
-      color: #ffcc00;
-      font-size: 2.5rem;
-      letter-spacing: 1px;
-      font-weight: bold;
+      margin-bottom: 40px;
     }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #00ffff;
+      text-shadow: 1px 1px 10px #00ffff66;
+    }
+
     section {
-      max-width: 960px;
+      max-width: 900px;
       margin: auto;
-      padding: 1rem;
+      background-color: #1e293b;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #00000055;
     }
+
     h2 {
-      border-bottom: 2px solid #ffcc00;
-      padding-bottom: 0.5rem;
-      margin-top: 2rem;
+      color: #facc15;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 1.5rem;
     }
+
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 1rem;
-      background: #1f1f1f;
-      border-radius: 6px;
-      overflow: hidden;
+      margin-top: 20px;
     }
+
     th, td {
-      padding: 0.75rem;
+      padding: 12px;
       text-align: center;
-      border: 1px solid #444;
+      border-bottom: 1px solid #4b5563;
     }
+
     th {
-      background-color: #333;
+      background-color: #334155;
+      color: #93c5fd;
     }
-    td {
-      background-color: #222;
+
+    tr:hover {
+      background-color: #374151;
+      transition: 0.2s ease-in-out;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      background: #222;
-      padding: 0.5rem 1rem;
-      margin: 0.4rem 0;
-      border-left: 4px solid #ffcc00;
-      border-radius: 4px;
+
+    @media screen and (max-width: 600px) {
+      table, th, td {
+        font-size: 0.85rem;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 <body>
-  <header>CO-Op Tournament 2025</header>
+
+  <header>
+    <h1>CO-Op Tournament</h1>
+  </header>
+
   <section>
-    <h2>Group A - Points Table</h2>
+    <h2>Point Table</h2>
     <table>
-      <tr><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>Pts</th></tr>
-      <tr><td>Vikings XI</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-      <tr><td>Prime 11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-      <tr><td>Red Devils</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-      <tr><td>Offside XI</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <thead>
+        <tr>
+          <th>Team</th>
+          <th>P</th>
+          <th>W</th>
+          <th>D</th>
+          <th>L</th>
+          <th>Pts</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Vikings XI</td>
+          <td>2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Offside XI</td>
+          <td>2</td>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Prime 11</td>
+          <td>2</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>Red Devils</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0</td>
+        </tr>
+      </tbody>
     </table>
-
-    <h2>Group A - Fixtures</h2>
-    <ul>
-      <li>Matchday 1: Vikings XI vs Offside XI</li>
-      <li>Matchday 1: Prime 11 vs Red Devils</li>
-      <li>Matchday 2: Vikings XI vs Red Devils</li>
-      <li>Matchday 2: Prime 11 vs Offside XI</li>
-      <li>Matchday 3: Vikings XI vs Prime 11</li>
-      <li>Matchday 3: Red Devils vs Offside XI</li>
-    </ul>
-
-    <h2>Group B - Points Table</h2>
-    <table>
-      <tr><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>Pts</th></tr>
-      <tr><td>Hunter XI</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-      <tr><td>Synergeist FC</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-      <tr><td>Thunder FC</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-      <tr><td>Shut Down FC</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-    </table>
-
-    <h2>Group B - Fixtures</h2>
-    <ul>
-      <li>Matchday 1: Hunter XI vs Shut Down FC</li>
-      <li>Matchday 1: Synergeist FC vs Thunder FC</li>
-      <li>Matchday 2: Hunter XI vs Thunder FC</li>
-      <li>Matchday 2: Synergeist FC vs Shut Down FC</li>
-      <li>Matchday 3: Hunter XI vs Synergeist FC</li>
-      <li>Matchday 3: Thunder FC vs Shut Down FC</li>
-    </ul>
   </section>
+
 </body>
 </html>
+
