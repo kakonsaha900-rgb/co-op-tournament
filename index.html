@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,16 +24,33 @@
       border-bottom: 2px solid #2980b9;
       padding-bottom: 5px;
     }
-    iframe {
+    .table-wrapper {
       width: 100%;
-      min-width: 700px;
+      overflow-x: auto;
+    }
+    .table-wrapper iframe {
+      width: 100%;
+      min-width: 900px;
       height: 480px;
       border: 1px solid #ccc;
       border-radius: 8px;
+      transform-origin: top left;
       display: block;
       margin: 0 auto 40px auto;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       background-color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 768px) {
+      .table-wrapper iframe {
+        transform: scale(0.75);
+        height: 360px;
+      }
+    }
+    @media (max-width: 480px) {
+      .table-wrapper iframe {
+        transform: scale(0.60);
+        height: 300px;
+      }
     }
     .container {
       max-width: 1000px;
@@ -136,7 +152,7 @@
     <h1>🏆 CO-Op Tournament</h1>
 
     <h2>Points Tables (Group 1 & 2)</h2>
-    <div style="overflow-x:auto; max-width:100%;">
+    <div class="table-wrapper">
       <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQa2yn4_25GMTXlSKzF6alTB_Fhg4crVtIT0Bzvl7u5Vb8XoCY8fYZrWnnbvYEii-wWAI2SVEacqe6_/pubhtml?widget=true&amp;headers=false"></iframe>
     </div>
 
@@ -206,7 +222,7 @@
     <ul class="members">
       <li><strong>Vikings XI</strong> – Surjo & Kakon</li>
       <li><strong>Prime 11</strong> – Iram & Paul</li>
-      <li><strong>Shut Down FC</strong> – Ayan & Rohan</li>
+      <li><strong>Shut Down FC</strong> – Shahriar & Rohan</li>
       <li><strong>Offside XI</strong> – Ezaz & Arnab</li>
       <li><strong>Hunter XI</strong> – Mafid & Uchas</li>
       <li><strong>Synergeist FC</strong> – Tushan & Arman</li>
@@ -218,6 +234,7 @@
 
 </body>
 </html>
+
 
 
 
