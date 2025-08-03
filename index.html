@@ -2,58 +2,221 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CO-Op Tournament Points Table</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CO-Op Tournament Points Table & Fixtures</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 30px;
-      background-color: #f9f9f9;
-    }
-    h1, h2 {
-      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 20px;
       color: #333;
     }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+    h2 {
+      color: #34495e;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #2980b9;
+      padding-bottom: 5px;
+    }
     iframe {
-      border: 1px solid #ccc;
-      border-radius: 10px;
       width: 100%;
-      height: 500px;
-    }
-    ul {
-      max-width: 600px;
-      margin: 20px auto;
-      padding: 10px;
-      background: #fff;
+      max-width: 900px;
+      height: 480px;
+      border: 1px solid #ccc;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: block;
+      margin: 0 auto 40px auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background-color: white;
     }
-    li {
-      padding: 5px 0;
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      padding: 25px 40px 40px 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+    .teams {
+      display: flex;
+      justify-content: space-around;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+    }
+    .team-group {
+      background: #ecf0f1;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: inset 0 0 10px #d0d7de;
+      flex: 1 1 300px;
+      max-width: 350px;
+    }
+    .team-group h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #2980b9;
+      border-bottom: 1px solid #2980b9;
+      padding-bottom: 6px;
+    }
+    ul.team-list, ul.fixture-list {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    ul.team-list li, ul.fixture-list li {
+      padding: 6px 0;
+      font-size: 1.1em;
+      border-bottom: 1px solid #bdc3c7;
+    }
+    ul.team-list li:last-child, ul.fixture-list li:last-child {
+      border-bottom: none;
+    }
+    .fixtures-container {
+      display: flex;
+      justify-content: space-around;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+    }
+    .fixture-group {
+      background: #ecf0f1;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: inset 0 0 10px #d0d7de;
+      flex: 1 1 400px;
+      max-width: 450px;
+    }
+    .fixture-group h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #2980b9;
+      border-bottom: 1px solid #2980b9;
+      padding-bottom: 6px;
+    }
+    .matchday-title {
+      font-weight: bold;
+      margin-top: 15px;
+      margin-bottom: 6px;
+      color: #34495e;
+      font-size: 1.1em;
+    }
+    ul.members {
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      padding: 15px 30px;
+      background: #f7f9fb;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #e1e7ec;
+      font-size: 1.1em;
+    }
+    ul.members li {
+      padding: 8px 0;
+      border-bottom: 1px solid #dfe6ed;
+    }
+    ul.members li:last-child {
+      border-bottom: none;
+    }
+    ul.members strong {
+      color: #2980b9;
     }
   </style>
 </head>
 <body>
 
-  <h1>🏆 CO-Op Tournament</h1>
+  <div class="container">
 
-  <h2>Group 1 & Group 2 - Points Tables</h2>
-  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQa2yn4_25GMTXlSKzF6alTB_Fhg4crVtIT0Bzvl7u5Vb8XoCY8fYZrWnnbvYEii-wWAI2SVEacqe6_/pubhtml?widget=true&amp;headers=false"></iframe>
+    <h1>🏆 CO-Op Tournament</h1>
 
-  <h2>Team Members</h2>
-  <ul>
-    <li><strong>Vikings XI</strong> – Surjo & Kakon</li>
-    <li><strong>Prime 11</strong> – Iram & Paul</li>
-    <li><strong>Shut Down FC</strong> – Ayan & Rohan</li>
-    <li><strong>Offside XI</strong> – Ezaz & Arnab</li>
-    <li><strong>Hunter XI</strong> – Mafid & Uchas</li>
-    <li><strong>Synergeist FC</strong> – Tushan & Arman</li>
-    <li><strong>Thunder FC</strong> – Siam & Raiyaan</li>
-    <li><strong>Red Devils</strong> – Shami & Sezan</li>
-  </ul>
+    <h2>Points Tables (Group 1 & 2)</h2>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQa2yn4_25GMTXlSKzF6alTB_Fhg4crVtIT0Bzvl7u5Vb8XoCY8fYZrWnnbvYEii-wWAI2SVEacqe6_/pubhtml?widget=true&amp;headers=false"></iframe>
+
+    <h2>Groups</h2>
+    <div class="teams">
+      <div class="team-group">
+        <h3>Group A</h3>
+        <ul class="team-list">
+          <li>Vikings-Xi</li>
+          <li>Prime 11</li>
+          <li>Red Devils</li>
+          <li>Offside Xi</li>
+        </ul>
+      </div>
+      <div class="team-group">
+        <h3>Group B</h3>
+        <ul class="team-list">
+          <li>Hunter Xi</li>
+          <li>Synergeist FC</li>
+          <li>Thunder FC</li>
+          <li>Shutdown FC</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Fixtures</h2>
+    <div class="fixtures-container">
+      <div class="fixture-group">
+        <h3>Group A Fixtures</h3>
+        <div class="matchday-title">Matchday 1</div>
+        <ul class="fixture-list">
+          <li>Vikings-Xi vs Offside Xi</li>
+          <li>Prime 11 vs Red Devils</li>
+        </ul>
+        <div class="matchday-title">Matchday 2</div>
+        <ul class="fixture-list">
+          <li>Vikings-Xi vs Red Devils</li>
+          <li>Prime 11 vs Offside Xi</li>
+        </ul>
+        <div class="matchday-title">Matchday 3</div>
+        <ul class="fixture-list">
+          <li>Vikings-Xi vs Prime 11</li>
+          <li>Red Devils vs Offside Xi</li>
+        </ul>
+      </div>
+      <div class="fixture-group">
+        <h3>Group B Fixtures</h3>
+        <div class="matchday-title">Matchday 1</div>
+        <ul class="fixture-list">
+          <li>Hunter Xi vs Shutdown FC</li>
+          <li>Synergeist FC vs Thunder FC</li>
+        </ul>
+        <div class="matchday-title">Matchday 2</div>
+        <ul class="fixture-list">
+          <li>Hunter Xi vs Thunder FC</li>
+          <li>Synergeist FC vs Shutdown FC</li>
+        </ul>
+        <div class="matchday-title">Matchday 3</div>
+        <ul class="fixture-list">
+          <li>Hunter Xi vs Synergeist FC</li>
+          <li>Thunder FC vs Shutdown FC</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Team Members</h2>
+    <ul class="members">
+      <li><strong>Vikings XI</strong> – Surjo & Kakon</li>
+      <li><strong>Prime 11</strong> – Iram & Paul</li>
+      <li><strong>Shut Down FC</strong> – Ayan & Rohan</li>
+      <li><strong>Offside XI</strong> – Ezaz & Arnab</li>
+      <li><strong>Hunter XI</strong> – Mafid & Uchas</li>
+      <li><strong>Synergeist FC</strong> – Tushan & Arman</li>
+      <li><strong>Thunder FC</strong> – Siam & Raiyaan</li>
+      <li><strong>Red Devils</strong> – Shami & Sezan</li>
+    </ul>
+
+  </div>
 
 </body>
 </html>
+
+
 
 
 
